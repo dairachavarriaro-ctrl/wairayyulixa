@@ -1,4 +1,4 @@
-// Countdown Timer
+
 const handleCountdown = () => {
   const countdownElement = document.getElementById('countdown');
   
@@ -7,8 +7,8 @@ const handleCountdown = () => {
     return;
   }
 
-  // Fecha del evento: 23 de noviembre de 2025, 8:00 PM
-  const eventDate = new Date(2025, 10, 23, 20, 0, 0); // 23 de noviembre de 2025, 8:00 PM
+
+  const eventDate = new Date(2025, 10, 23, 20, 0, 0); 
 
   const updateCountdown = () => {
     const currentTime = new Date();
@@ -19,23 +19,21 @@ const handleCountdown = () => {
       return;
     }
 
-    // Calcular días, horas, minutos y segundos
     const days = Math.floor(difference / (1000 * 60 * 60 * 24));
     const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const mins = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     const secs = Math.floor((difference % (1000 * 60)) / 1000);
     
-    // Formato: DDD:HH:MM:SS (días:horas:minutos:segundos)
+
     const formattedTime = `${String(days).padStart(3, '0')}:${String(hours).padStart(2, '0')}:${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
     countdownElement.textContent = formattedTime;
   };
 
-  // Ejecutar inmediatamente y luego cada segundo
   updateCountdown();
   setInterval(updateCountdown, 1000);
 };
 
-// Gallery Slider
+
 const handleGallery = () => {
   const prevBtn = document.getElementById('prevBtn');
   const nextBtn = document.getElementById('nextBtn');
@@ -64,12 +62,11 @@ const handleGallery = () => {
   nextBtn.addEventListener('click', handleNext);
   prevBtn.addEventListener('click', handlePrev);
 
-  // Auto-play opcional (comentado por defecto)
-  // setInterval(handleNext, 5000);
+
 };
 
 
-// Intersection Observer para animaciones al hacer scroll
+
 const handleScrollAnimations = () => {
   const observerOptions = {
     threshold: 0.1,
@@ -85,7 +82,7 @@ const handleScrollAnimations = () => {
     });
   }, observerOptions);
 
-  // Observar elementos con animación
+
   const animatedElements = document.querySelectorAll(
     '.discover-card, .music-section, .countdown-section, .gallery-section, .section-title'
   );
@@ -96,7 +93,7 @@ const handleScrollAnimations = () => {
   });
 };
 
-// Navbar sticky con efecto de transparencia
+
 const handleStickyNavbar = () => {
   const navbar = document.querySelector('.navbar');
   if (!navbar) return;
@@ -117,7 +114,6 @@ const handleStickyNavbar = () => {
   });
 };
 
-// Smooth scroll mejorado con offset
 const handleSmoothScroll = () => {
   const navLinks = document.querySelectorAll('a[href^="#"]');
 
@@ -145,7 +141,7 @@ const handleSmoothScroll = () => {
   });
 };
 
-// Preload de imágenes críticas
+
 const preloadImages = () => {
   const criticalImages = [
     'assets/2.png',
@@ -161,7 +157,7 @@ const preloadImages = () => {
   });
 };
 
-// Mejora de performance: Lazy loading para imágenes
+
 const handleLazyLoading = () => {
   if ('loading' in HTMLImageElement.prototype) {
     const images = document.querySelectorAll('img[data-src]');
@@ -169,7 +165,7 @@ const handleLazyLoading = () => {
       img.src = img.dataset.src;
     });
   } else {
-    // Fallback para navegadores que no soportan lazy loading nativo
+
     const imageObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -187,7 +183,7 @@ const handleLazyLoading = () => {
   }
 };
 
-// Efecto parallax sutil para hero
+
 const handleParallax = () => {
   const hero = document.querySelector('.hero');
   if (!hero) return;
@@ -202,7 +198,7 @@ const handleParallax = () => {
   });
 };
 
-// Menú Hamburguesa
+
 const handleHamburgerMenu = () => {
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const navMenu = document.getElementById('navMenu');
@@ -218,7 +214,6 @@ const handleHamburgerMenu = () => {
 
   hamburgerBtn.addEventListener('click', toggleMenu);
 
-  // Cerrar menú al hacer clic en un enlace
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       hamburgerBtn.classList.remove('active');
@@ -227,7 +222,7 @@ const handleHamburgerMenu = () => {
     });
   });
 
-  // Cerrar menú al hacer clic fuera
+ 
   document.addEventListener('click', (e) => {
     if (navMenu.classList.contains('active') && 
         !navMenu.contains(e.target) && 
@@ -237,7 +232,7 @@ const handleHamburgerMenu = () => {
   });
 };
 
-// Inicializar todo cuando el DOM esté listo
+
 document.addEventListener('DOMContentLoaded', () => {
   handleCountdown();
   handleGallery();
@@ -247,6 +242,6 @@ document.addEventListener('DOMContentLoaded', () => {
   handleHamburgerMenu();
   preloadImages();
   handleLazyLoading();
-  // handleParallax(); // Descomentar si quieres efecto parallax
+
 });
 
