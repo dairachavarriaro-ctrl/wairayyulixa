@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Boletería de Sinfonía de Luces - Compra tus entradas para el concierto de música clásica en Medellín"
+    />
+    
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-banner">
+        <img src="assets/9.png" alt="Orquesta en escena" class="banner-image" />
+      </div>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/2.png" alt="Logo" class="logo-image" />
+            </a>
+          </div>
+          <button
+            class="hamburger-menu"
+            aria-label="Menú de navegación"
+            id="hamburgerBtn"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link">HOME</a></li>
+            <li>
+              <a href="index.html#experiencia" class="nav-link">EXPERIENCIA</a>
+            </li>
+            <li>
+              <a href="index.html#tematicas" class="nav-link">TEMATICAS</a>
+            </li>
+            <li><a href="programa.html" class="nav-link">PROGRAMA</a></li>
+            <li><a href="boleteria.html" class="nav-link">BOLETERIA</a></li>
+            <li>
+              <a href="travel.html" class="nav-link">TRAVEL & LOGÍSTICA</a>
+            </li>
+            <li><a href="index.html#galeria" class="nav-link">GALERIA</a></li>
+          </ul>
+          <div class="language-selector">
+            <span>ES/EN</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Sección Boletería -->
+    <section class="tickets-section">
+      <div class="tickets-container">
+        <h2 class="section-title">BOLETERIA</h2>
+        <div class="tickets-grid">
+          <div class="ticket-card">
+            <h3 class="ticket-type">General</h3>
+            <p class="ticket-price">$45.000 COP</p>
+            <ul class="ticket-features">
+              <li>Vista general del escenario</li>
+              <li>Acceso a todas las presentaciones</li>
+              <li>Área de descanso</li>
+              <li>Programa del evento</li>
+            </ul>
+            <button class="ticket-btn" aria-label="Comprar entrada general">
+              <span>COMPRAR</span>
+            </button>
+          </div>
+          <div class="ticket-card">
+            <h3 class="ticket-type">Preferencial</h3>
+            <p class="ticket-price">$85.000 COP</p>
+            <ul class="ticket-features">
+              <li>Vista preferencial del escenario</li>
+              <li>Acceso a todas las presentaciones</li>
+              <li>Área VIP de descanso</li>
+              <li>Programa del evento</li>
+            </ul>
+            <button
+              class="ticket-btn"
+              aria-label="Comprar entrada preferencial"
+            >
+              <span>COMPRAR</span>
+            </button>
+          </div>
+          <div class="ticket-card">
+            <h3 class="ticket-type">VIP</h3>
+            <p class="ticket-price">$150.000 COP</p>
+            <ul class="ticket-features">
+              <li>Vista privilegiada del escenario</li>
+              <li>Acceso a todas las presentaciones</li>
+              <li>Área VIP exclusiva</li>
+              <li>Encuentro con los artistas</li>
+              <li>Programa firmado</li>
+            </ul>
+            <button class="ticket-btn" aria-label="Comprar entrada VIP">
+              <span>COMPRAR</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-social">
+          Sígueme en redes: @sinfoniadeluces
+          <a href="#" aria-label="Instagram">Instagram</a> |
+          <a href="#" aria-label="YouTube">YouTube</a> |
+          <a href="#" aria-label="LinkedIn">LinkedIn</a> |
+          <a href="#" aria-label="TikTok">TikTok</a> |
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </p>
+        <p class="footer-email">
+          Correo:
+          <a href="mailto:sinfoniadeluces@gmail.com"
+            >sinfoniadeluces@gmail.com</a
+          >
+        </p>
+        <p class="footer-copyright">
+          © Sinfoniadeluces. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

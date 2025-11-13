@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sinfonía de Luces - Un concierto que rompe los límites de la música clásica en Medellín, Colombia"
+    />
+    <title>Sinfonía de Luces - Concierto de Música Clásica</title>
+    
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-banner">
+        <img src="assets/9.png" alt="Orquesta en escena" class="banner-image" />
+      </div>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">
+              <img src="assets/2.png" alt="Logo" class="logo-image" />
+            </a>
+          </div>
+          <button
+            class="hamburger-menu"
+            aria-label="Menú de navegación"
+            id="hamburgerBtn"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link">HOME</a></li>
+            <li>
+              <a href="index.html#experiencia" class="nav-link">EXPERIENCIA</a>
+            </li>
+            <li>
+              <a href="index.html#tematicas" class="nav-link">TEMATICAS</a>
+            </li>
+            <li><a href="programa.html" class="nav-link">PROGRAMA</a></li>
+            <li><a href="boleteria.html" class="nav-link">BOLETERIA</a></li>
+            <li>
+              <a href="travel.html" class="nav-link">TRAVEL & LOGÍSTICA</a>
+            </li>
+            <li><a href="index.html#galeria" class="nav-link">GALERIA</a></li>
+          </ul>
+          <div class="language-selector">
+            <span>ES/EN</span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <video
+          src="assets/tablet, compu (1).mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+          class="hero-video"
+        ></video>
+        <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Un concierto que rompe los límites de la música clásica</h1>
+      <p>Arte y luz se encuentran en Medellín - Colombia</p>
+      <p>Del 23 al 26 de noviembre</p>
+        <button
+          class="hero-button"
+          onclick="window.location.href='boleteria.html'"
+        >
+          !COMPRA TUS ENTRADAS Y VIVE LA MAGIA!
+        </button>
+         </div>
+      </div>
+    </section>
+
+    <!-- Sección Vive la música clásica -->
+    <section id="experiencia" class="music-section">
+      <div class="music-container">
+        <div class="music-content">
+          <h2 class="music-title">Vive la música clásica como nunca antes.</h2>
+          <p class="music-text">
+            Sinfonía de Luces es una experiencia única donde la música clásica
+            se encuentra con la luz y el arte. Un espectáculo sensorial que
+            transforma cada nota en una experiencia visual inolvidable. Las
+            luces cálidas iluminan el escenario mientras los instrumentos cobran
+            nueva vida. Violines, pianos y chelos se unen para crear una
+            sinfonía que trasciende lo tradicional. Redescubre la música clásica
+            a través de la emoción, la elegancia y la innovación.
+          </p>
+          <button
+            class="read-more-btn"
+            aria-label="Leer más sobre la experiencia"
+          >
+            LEER MÁS
+          </button>
+        </div>
+        <div class="music-image">
+          <img
+            src="assets/1.png"
+            alt="Pianista en escena"
+            class="pianist-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Countdown -->
+    <section class="countdown-section">
+      <div class="countdown-container">
+        <p class="countdown-text">
+          Faltan pocos días para que la magia comience
+        </p>
+        <div class="countdown-timer">
+          <span id="countdown" class="timer-display">23:59:54</span>
+        </div>
+      </div>
+      <p class="countdown-subtext">
+        ¡Una noche única en el Teatro Metropolitano!
+      </p>
+    </section>
+
+    <!-- Sección Descubre -->
+    <section id="tematicas" class="discover-section">
+      <h2 class="section-title">DESCUBRE</h2>
+      <div class="cards-container">
+        <!-- Card 1: Música sin límites -->
+        <article class="discover-card">
+          <img src="assets/4.png" alt="Música sin límites" class="card-image" />
+          <div class="card-content">
+            <p class="card-description">
+              Disfruta de Sinfonía de Luces sin preocuparte por el precio.
+              Ofrecemos diferentes opciones de entradas que se adaptan a todos
+              los presupuestos, desde vistas generales hasta experiencias
+              privilegiadas. La música clásica es para todos.
+            </p>
+            <button
+              class="card-btn"
+              aria-label="Leer más sobre música sin límites"
+            >
+              LEER MÁS
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 2: Artísticas -->
+        <article class="discover-card">
+          <img src="assets/5.png" alt="Artísticas" class="card-image" />
+          <div class="card-content">
+            <p class="card-description">
+              Una experiencia única donde la música y la luz se fusionan.
+              Contamos con talentos excepcionales como la Orquesta Filarmónica
+              de Medellín, la soprano Catalina Gómez y el Cuarteto Aurora. Cada
+              presentación es una obra maestra en movimiento.
+            </p>
+            <button class="card-btn" aria-label="Leer más sobre los artistas">
+              LEER MÁS
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 3: Infaltables -->
+        <article class="discover-card">
+          <img src="assets/6.png" alt="Infaltables" class="card-image" />
+          <div class="card-content">
+            <p class="card-description">
+              Solo necesitas las ganas de sentir la música y dejarte llevar por
+              la magia. Ven con una buena actitud y prepárate para vivir una
+              experiencia sensorial única. La música clásica te espera para
+              transformar tu perspectiva del arte.
+            </p>
+            <button
+              class="card-btn"
+              aria-label="Leer más sobre recomendaciones"
+            >
+              LEER MÁS
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección Galería -->
+    <section id="galeria" class="gallery-section">
+      <h2 class="gallery-title">GALERIA</h2>
+      <div class="gallery-container">
+        <button
+          class="gallery-nav-btn gallery-prev"
+          aria-label="Imagen anterior"
+          id="prevBtn"
+        >
+          ‹
+        </button>
+        <div class="gallery-slider">
+          <div class="gallery-track" id="galleryTrack">
+            <div class="gallery-slide">
+              <img
+                src="assets/8.png"
+                alt="Audiencia en el teatro"
+                class="gallery-image"
+              />
+            </div>
+            <div class="gallery-slide">
+              <img
+                src="assets/nuevos/Concierto-de-piano-gratuito-en-Antigua-Guatemala-885x500.jpg"
+                alt="Músicos en escena con luces"
+                class="gallery-image"
+              />
+            </div>
+            <div class="gallery-slide">
+              <img
+                src="assets/10.png"
+                alt="Concierto en vivo"
+                class="gallery-image"
+              />
+            </div>
+          </div>
+        </div>
+        <button
+          class="gallery-nav-btn gallery-next"
+          aria-label="Siguiente imagen"
+          id="nextBtn"
+        >
+          ›
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <p class="footer-social">
+          Sígueme en redes: @sinfoniadeluces
+          <a href="#" aria-label="Instagram">Instagram</a> |
+          <a href="#" aria-label="YouTube">YouTube</a> |
+          <a href="#" aria-label="LinkedIn">LinkedIn</a> |
+          <a href="#" aria-label="TikTok">TikTok</a> |
+          <a href="#" aria-label="Facebook">Facebook</a>
+        </p>
+        <p class="footer-email">
+          Correo:
+          <a href="mailto:sinfoniadeluces@gmail.com"
+            >sinfoniadeluces@gmail.com</a
+          >
+        </p>
+        <p class="footer-copyright">
+          © Sinfoniadeluces. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
